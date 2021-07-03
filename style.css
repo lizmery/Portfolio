@@ -298,7 +298,7 @@ p {
 #hero h1 {
     display: block;
     width: fit-content;
-    /*font-size: 4rem;*/
+    font-size: 4rem;
     font-weight: 90;
     position: relative;
     color: transparent;
@@ -495,11 +495,11 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 30px;
+    /*margin: 30px;*/
     /*width: 60%;*/
     /*margin: 50px;*/
     overflow: hidden;
-    margin-bottom: 50px;
+    margin: 5px 10px 50px 10px;
     border-radius: 5px;
     background-color: transparent;
     box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.4);
@@ -712,15 +712,6 @@ p {
         text-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.2);
     }
 }
-/*
-@keyframes text_reveal_name {
-    100% {
-        color: #e8d1a8;
-        text-transform: uppercase;
-        text-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.2);
-        letter-spacing: 12px;
-    }
-}
 /* End Keyframes */
 
 /* Media Query For Tablet */
@@ -776,7 +767,7 @@ p {
 	#projects .project-item {
 		height: 400px;
 		/*margin: 0;*/
-		width: 100%;
+		/*width: 100%;*/
 	}
 	#projects .all-projects .project-info {
 		height: 100%;
@@ -858,3 +849,11 @@ p {
 	}
 }
 /* End  Media Query For Desktop */
+
+/*Media Query for Phone (additional)
+@media only screen and (max-width: 488px) {
+    #hero h1:nth-child(2) {
+        font-size: 4rem;
+    }
+}
+*/
