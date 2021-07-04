@@ -135,8 +135,9 @@ p {
 }
 
 .box-shadow-night {
-    box-shadow: 0 26px 42px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 26px 42px rgba(0, 0, 0, 0.3);
     border: 1px solid #ffffff40;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 /*  Header Section */
@@ -206,7 +207,7 @@ p {
     height: 60px;
     width: 60px;
     display: inline-block;
-    border: 3px solid #fff;
+    border: 2px solid #ffffff40;
     border-radius: 50%;
     position: relative;
     display: flex;
@@ -223,7 +224,7 @@ p {
     content: "";
     height: 100%;
     width: 100%;
-    border: 3px solid #fff;
+    border: 2px solid #ffffff40;
     border-radius: 50%;
     animation: hamburger_puls 5s ease;
 }
@@ -459,7 +460,6 @@ p {
     padding: 30px;
     border-radius: 10px;
     margin: 10px 5%;
-    background-color: transparent;
     overflow: hidden;
 }
 
@@ -497,7 +497,7 @@ p {
 }
 
 #projects .all-projects {
-    border-radius: 5px;
+    width: 80%;
 }
 
 #projects .project-item {
@@ -508,8 +508,7 @@ p {
     overflow: hidden;
     margin: 5px 10px 50px 10px;
     border-radius: 5px;
-    background-color: transparent;
-    transition: all .3s ease;
+    transition: .3s ease-in-out;
 }
 
 #projects .project-info {
@@ -617,14 +616,6 @@ p {
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 10px;
-}
-
-#footer h2 {
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.8rem;
-    letter-spacing: .1rem;
-    margin-top: 10px;
 }
 
 #footer .social-icon {
