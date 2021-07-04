@@ -115,14 +115,9 @@ p {
     font-size: 3rem;
     text-transform: uppercase;
     text-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.2);
-    color: #fff;
-    font-weight: 100;
-}
-
-.brand h1 span {
     color: #87A7A7;
-    font-weight: 400;
-    font-size: 4rem;
+    font-weight: 100;
+    letter-spacing: .1rem;
 }
 
 .dark {
