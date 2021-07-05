@@ -530,8 +530,8 @@ p {
 #projects .project-img {
     flex-basis: 50%;
     height: 300px;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 }
 
 #projects .project-img img {
@@ -618,26 +618,28 @@ p {
     padding-bottom: 10px;
 }
 
-#footer .social-icon {
+#footer .social-media {
     display: flex;
-    margin-bottom: 30px;
+    width: 100%;
+    justify-content: center;
 }
 
-#footer .social-item {
-    height: 50px;
-    width: 50px;
-    margin: 0 5px;
+#footer .social-media i {
+    font-size: 4.5rem;
+    margin: 2rem;
+    /*width: 5rem;
+    height: 5rem;*/
+    background-color: transparent;
+    color: #ffffff40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
 }
 
-#footer .social-item img {
-    filter: grayscale(1);
-    transition: .3s ease filter;
+#footer .social-media i:hover {
+    color: rgba(135, 167, 167, .5);
 }
-
-#footer .social-item:hover img {
-    filter: grayscale(0);
-}
-
 #footer p {
     color: #fff;
     font-size: 1.3rem;
