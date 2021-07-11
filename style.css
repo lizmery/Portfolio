@@ -626,7 +626,7 @@ p {
 
 #footer .social-media i {
     font-size: 4.5rem;
-    margin: 2rem;
+    margin: 1.5rem;
     /*width: 5rem;
     height: 5rem;*/
     background-color: transparent;
@@ -648,8 +648,9 @@ p {
 
 #footer .copyright {
     font-size: 1rem;
-    text-align: left;
     opacity: 0.7;
+    padding-top: 0;
+    margin-bottom: .5rem;
 }
 /* End Footer */
 
