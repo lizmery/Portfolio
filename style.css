@@ -118,6 +118,7 @@ p {
     color: #87A7A7;
     font-weight: 100;
     letter-spacing: .1rem;
+    margin-left: .5rem;
 }
 
 .dark {
@@ -135,9 +136,8 @@ p {
 }
 
 .box-shadow-night {
-    box-shadow: 0 26px 42px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 26px 42px rgba(0, 0, 0, 0.4);
     border: 1px solid #ffffff40;
-    background-color: rgba(0, 0, 0, 0.2);
 }
 
 /*  Header Section */
@@ -163,7 +163,6 @@ p {
     width: 100%;
     height: 100%;
     max-width: 1300px;
-    padding: 0 10px;
 }
 
 #header .navlist ul {
@@ -291,7 +290,6 @@ p {
 #header .themeSwitch.active::before {
     content: '\f185';
 }
-
 /* End Header Section */
 
 /* Hero Section */
@@ -300,26 +298,28 @@ p {
     background-size: cover;
     background-position: top center;
     position: relative;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(40,50,50,.5) 0%, rgba(40,50,50,.6) 50%, rgba(40,50,50,1) 100%);
     z-index: 1;
 }
 
-#hero::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(28, 28, 28, 0.98);
-    opacity: .3;
-    z-index: -1;
+#hero .hero {
+    max-width: 90vw;
+    margin: 0 auto;
+    /*padding: 0 50px;*/
+    justify-content: flex-start;
 }
 
-#hero .hero {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 50px;
-    justify-content: flex-start;
+#hero .hero-text {
+    z-index: 10;
 }
 
 #hero h1 {
@@ -627,8 +627,6 @@ p {
 #footer .social-media i {
     font-size: 4.5rem;
     margin: 1.5rem;
-    /*width: 5rem;
-    height: 5rem;*/
     background-color: transparent;
     color: #ffffff40;
     display: flex;
@@ -641,14 +639,13 @@ p {
     color: rgba(135, 167, 167, .5);
 }
 #footer p {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
     font-size: 1.3rem;
     text-align: center;
 }
 
 #footer .copyright {
     font-size: 1rem;
-    opacity: 0.7;
     padding-top: 0;
     margin-bottom: .5rem;
 }
@@ -805,7 +802,7 @@ p {
 		display: inline-block;
 	}
 	#header .navlist ul li a {
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 	}
 	#header .navlist ul a:after {
 		display: none;

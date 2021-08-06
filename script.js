@@ -25,7 +25,7 @@ menu_item.forEach((item) => {
     });
 });
 
-/* Day/Night Mode Switch */
+/* Theme Switch */
 let themeSwitch = document.querySelector('.themeSwitch');
 let body = document.querySelector('body');
 let sectionTitles = document.querySelectorAll('.section-title');
