@@ -45,7 +45,6 @@ p {
 .section-title {
     font-size: 4rem;
     font-weight: 300;
-    color: #000;
     margin-bottom: 10px;
     text-transform: uppercase;
     text-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.2);
@@ -90,7 +89,7 @@ p {
     transition: .3s ease;
     transition-property: background-color, color;
     text-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.2);
-    border: 1px solid #fff;
+    border: 1px solid #ffffff40;
     border-radius: 5px;
 }
 
@@ -109,6 +108,7 @@ p {
 
 .source:hover {
     color: #435353;
+    font-size: 1.65rem;
 }
 
 .brand h1 {
@@ -294,7 +294,7 @@ p {
 
 /* Hero Section */
 #hero {
-    background-image: url(images/hero4.jpg);
+    background-image: url(images/hero4.JPG);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -314,7 +314,6 @@ p {
 #hero .hero {
     max-width: 90vw;
     margin: 0 auto;
-    /*padding: 0 50px;*/
     justify-content: flex-start;
 }
 
@@ -374,7 +373,7 @@ p {
 
 #about .col-left {
     width: 250px;
-    height: 360px;
+    height: 350px;
 }
 
 #about .col-right {
@@ -403,25 +402,25 @@ p {
     height: 100%;
     width: 100%;
     position: relative;
-    margin-right: 10px;
+    border: 10px solid transparent;
+    border-radius: 8px;
 }
 
 #about .about-img  img {
     filter: grayscale(.3);
-    border: 10px solid rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
+    border-radius: 8px;
 }
 
 #about .col-left .about-img::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 19px;
+    left: -33px;
     height: 98%;
     width: 98%;
     border: 7px solid #87A7A7;
-    z-index: -1;
-    border-radius: 50%;
+    z-index: 10;
+    border-radius: 8px;
 }
 
 #about .cta:hover {
@@ -701,11 +700,14 @@ p {
     #about .col-left {
         width: 600px;
         height: 400px;
+        padding-left: 60px;
     }
     #about .about .col-left .about-img::after {
+        left: -45px;
+        top: 34px;
         height: 98%;
         width: 98%;
-        border: 10px solid #87A7A7;
+        border: 8px solid #87A7A7;
     }
     #about .col-right {
         text-align: left;
