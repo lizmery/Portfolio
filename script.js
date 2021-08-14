@@ -34,10 +34,10 @@ let boxShadows = document.querySelectorAll('.box-shadow');
 
 themeSwitch.onclick = function() {
     themeSwitch.classList.toggle('active');
-    body.classList.toggle('dark');
+    body.classList.toggle('dark-theme');
 
     sectionTitles.forEach(function(el) {
-        el.classList.toggle('dark-title');
+        el.classList.toggle('dark-theme-title');
     });
 
     boxShadows.forEach(function(el) {
