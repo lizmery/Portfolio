@@ -14,7 +14,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lizmery Vigil portfolio">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- FONT ICON -->
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
@@ -23,8 +26,9 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FAVICON -->
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
-    <title>Portfolio</title>
+    <title>Lizmery Vigil | Portfolio</title>
 </head>
 <body>
     <!-- Header -->
@@ -67,12 +71,12 @@
     <!-- About Section -->
     <section id="about">
         <div class="about container">
-            <div class="col-left">
+            <div class="col-left" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
                 <div class="about-img">
                     <img src="./images/headshot.jpg" alt="profile picture">
                 </div>
             </div>
-            <div class="col-right">
+            <div class="col-right" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
                 <h1 class="section-title">About <span>me</span></h1>
                 <h2>Software Developer</h2>
                 <p>I am a web developer with a background in Psychology and a
@@ -91,12 +95,13 @@
     <!-- Education Section -->
     <section id="education">
         <div class="education container">
-            <div class="education-top">
-                <h1 class="section-title">Educa<span>t</span>ion</h1>
+            <div class="education-top" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="section-title">Education</h1>
             </div>
             <div class="education-bottom">
-                <div class="education-item box-shadow">
+                <div class="education-item box-shadow" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
                     <div class="icon">
+                        <!-- Icon by Icons8.com -->
                         <img src="https://img.icons8.com/bubbles/50/000000/education.png" alt="education icon"/>
                     </div>
                     <h3>2014 - 2018</h3>
@@ -109,8 +114,9 @@
                     - <i>Cum Laude Graduate, Research Assistant, Presenter @ CSUSM Psychology Research Fair,
                     Psi Chi Secretary</i></p>
                 </div>
-                <div class="education-item box-shadow">
+                <div class="education-item box-shadow" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
                     <div class="icon">
+                        <!-- Icon by Icons8.com -->
                         <img src="https://img.icons8.com/bubbles/50/000000/education.png" alt="education icon"/>
                     </div>
                     <h3>2020 - 2021</h3>
@@ -119,7 +125,7 @@
                         is a 12 unit program that includes the Web page design
                         and programming languages that allow a developer to build
                         dynamic and responsive web applications.<br>
-                        <i>- Languages:</i>  HTML, CSS, JavaScript, PHP, Python<br>
+                        <i>- Languages:</i>  HTML5, CSS3, JavaScript, PHP, Python<br>
                         <i>- Frameworks/Libraries:</i>  JQuery<br>
                         <i>- Databases:</i>  SQL
                     </p>
@@ -132,14 +138,14 @@
     <!-- Projects Section -->
     <section id="projects">
         <div class="projects container">
-            <div class="projects-header">
+            <div class="projects-header" data-aos="fade-up" data-aos-duration="1000">
                 <h1 class="section-title">Recent <span>Projects</span></h1>
             </div>
-            <div class="all-projects">
+            <div class="all-projects" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
                 <div class="project-item box-shadow">
                     <div class="project-info">
                         <h1>Coffee Shop</h1>
-                        <h2><i>HTML, CSS, JavaScript</i></h2>
+                        <h2><i>HTML5, CSS3, JavaScript</i></h2>
                         <p>A responsive website demo for a coffee shop that features
                             an about section, menu, visit section, and a reviews section. <br>                      
                         <a href="https://local-coffee-demo.netlify.app/" type="button" class="cta" target="_blank" rel="noopener noreferrer">See Live</a>
@@ -153,7 +159,7 @@
                 <div class="project-item box-shadow">
                     <div class="project-info">
                         <h1>Landing Page</h1>
-                        <h2><i>HTML, CSS, JavaScript</i></h2>
+                        <h2><i>HTML5, CSS3, JavaScript</i></h2>
                         <p>A responsive landing page that features CSS animations using keyframes.
                             The website is customizable to fit your portfolio, business
                             or any other needs.
@@ -169,7 +175,7 @@
                 <div class="project-item box-shadow">
                     <div class="project-info">
                         <h1>Book List App</h1>
-                        <h2><i>JavaScript, HTML, Bootstrap</i></h2>
+                        <h2><i>JavaScript, HTML5, Bootstrap</i></h2>
                         <p>A book list app that keeps track of a user's 'To Be Read'
                             book list, as well as their 'Completed' book list.
                             <br>
@@ -196,9 +202,10 @@
                         </p>
                     </div>
                     <div class="project-img">
-                        
+                        <img src="./images/bankAccProject.png" alt="Bank Account Project Screenshot">
                     </div>
                 </div>
+                <!--
                 <div class="project-item box-shadow">
                     <div class="project-info">
                         <h1>Twitter Bot</h1>
@@ -219,6 +226,7 @@
                         </a>
                     </div>
                 </div>
+                -->
             </div>
         </div>
     </section>
@@ -227,12 +235,13 @@
     <!-- Contact Section -->
     <section id="contact">
         <div class="contact container">
-            <div>
+            <div data-aos="fade-up" data-aos-duration="1000">
                 <h1 class="section-title">Contact <span>info</span></h1>
             </div>
-            <div class="contact-items">
+            <div class="contact-items" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
                 <div class="contact-item box-shadow">
                     <div class="icon">
+                        <!-- Icon by Icons8.com -->
                         <img src="https://img.icons8.com/bubbles/100/000000/phone.png" alt="phone icon">
                     </div>
                     <div class="contact-info">
@@ -242,6 +251,7 @@
                 </div>
                 <div class="contact-item box-shadow">
                     <div class="icon">
+                        <!-- Icon by Icons8.com -->
                         <img src="https://img.icons8.com/bubbles/100/000000/new-post.png" alt="email icon">
                     </div>
                     <div class="contact-info">
@@ -251,6 +261,7 @@
                 </div>
                 <div class="contact-item box-shadow">
                     <div class="icon">
+                        <!-- Icon by Icons8.com -->
                         <img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" alt="location icon"/>
                     </div>
                     <div class="contact-info">
@@ -286,6 +297,11 @@
     </section>
     <!-- End Footer -->
 
+    <!-- JavaScript -->
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
