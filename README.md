@@ -12,7 +12,7 @@ The first version of my personal portfolio, deployed on Netlify.
 - Light/dark theme switch
 - Animations from [Animate on Scroll Library](https://github.com/michalsnik/aos)
 - Responsive design
-- - Mobile-first approach
+- Mobile-first approach
 - CSS animations using keyframes
 
 ## Screenshots
